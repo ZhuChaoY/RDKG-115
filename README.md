@@ -6,7 +6,7 @@ Rare diseases (RDs) individually affect a small number of people but collectivel
 
 ## Files
 ### Annotation/
-**E_dict.json**  
+**E_dict.json** : json file of standard entirt set  
 
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding    
@@ -21,20 +21,19 @@ Rare diseases (RDs) individually affect a small number of people but collectivel
 **Optimization.py** : Training optimization of BioBERT     
 **Tokenization.py** : Tokenization function of BioBERT     
 **Run_D_Table.py** : Run it to get D_table.data  
+#### KG/
+**entity.csv** : Entities of RDKG-115  
+**relation.csv** : Relations of RDKG-115  
+**train.csv** : Train set of RDKG-115 (98%)    
+**dev.csv** : Dev set of RDKG-115 (1%)  
+**test.csv** : Test set of RDKG-115 (1%)  
 #### Pretrained BioBERT/  
 **biobert_config.json**  
 **biobert_model.ckpt.data-00000-of-00001**  
 **biobert_model.ckpt.index**  
 **biobert_model.ckpt.meta**  
 **vocab.txt**  
-Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert    
-
-### Supplementary Table/  
-**Supplementary Table S1 (statistical analysis of entity prediction)**  
-**Supplementary Table S2 (drug-gene new inferred knowledge)**   
-**Supplementary Table S3 (gene-disease new inferred knowledge)**   
-**Supplementary Table S4 (disease-drug new inferred knowledge)**   
-**Supplementary Table S5 (closed-triplets)**    
+Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert     
 
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
