@@ -1,2 +1,2 @@
 # RDKG-115
-Drug Repurposing for Rare Diseases by Multimodal Knowledge Graph Embedding
+Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal Knowledge Graph Embedding   
