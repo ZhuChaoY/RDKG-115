@@ -30,7 +30,7 @@ class D_Table():
 
         self.model_dir = '../Pretrained BioBERT/'
             
-        with open(self.model_dir + 'bert_config.json') as file:
+        with open(self.model_dir + 'biobert_config.json') as file:
             config = json.load(file)
             self.dropout = config['hidden_dropout_prob']
             self.hidden = config['hidden_size']
@@ -379,7 +379,7 @@ class D_Table():
                for v in tf.trainable_variables()]
 
         if mode == 'train':
-            p = self.model_dir + 'bert_model.ckpt'          
+            p = self.model_dir + 'biobert_model.ckpt'          
             ivs = {v[0]: v[0] for v in tf.train.list_variables(p) 
                    if v[0] in tvs and 'bert' in v[0]}
         elif mode == 'predict':
