@@ -36,10 +36,9 @@ Rare diseases (RDs) individually affect a small number of people but collectivel
 Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert     
 
 ### RDKG-115/
-**entity_name_map.xlsx** : Entity key-name mapping file
-**RDKG-115.csv** : raw RDKG-115  
+**entity_name_map.xlsx** : Entity key-name mapping file  
+**RDKG-115.csv** : raw RDKG-115   
 **RDKG-115 (plus inferred).csv** : RDKG-115 merge with reliable new inferred knowledges  
-
 
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
@@ -66,43 +65,21 @@ python get_C_dict.py
 
 (3) Run Run_D_Table.py to get D_table.data in **Model/C&D/**     
 ```
-python Run_D_Table.py --len_d 150 --dim 200 --l_r 1e-5 --batch_size 8 --epoches 10 --earlystop 1   
+python Run_D_Table.py --len_d 150 --dim 100 --l_r 1e-5 --batch_size 8 --epoches 5 --earlystop 1   
 ```
 
-(4) Run Run_KGE.py to train TransE, TransH, and ConvKB in **Model/**
-#### Parameter Interpretation  
+(4) Run Run_KGE.py to train TransE, TransH, and RotatE in **Model/**
+#### 4 Configurations Interpretation   
 lanta_c == 0 and lanta_d == 0 : S  
 lanta_c != 0 and lanta_d == 0 : S + C  
 lanta_c == 0 and lanta_d != 0 : S + D  
 lanta_c != 0 and lanta_d != 0 : S + C + D  
 
-**[disease]** from the abbreviation of disease names as follow      
-{'ald' : 'alzheimer_disease',  
- 'coc' : 'colon_cancer',  
- 'cop' : 'copd',  
- 'chd' : 'coronary_heart_disease',  
- 'dia' : 'diabetes',  
- 'gac' : 'gallbladder_cancer',  
- 'gsc' : 'gastric_cancer',  
- 'hef' : 'heart_failure',  
- 'lic' : 'liver_cancer',  
- 'luc' : 'lung_cancer',  
- 'rha' : 'rheumatoid_arthritis',  
- 'can' : '_cancer5',  
- 'dis' : '_disease11'}   
-
-**TransE**:   
+#### Recommended Parameters for 3 models and 4 Configurations (dim of 100)   
+**TransE**
 ```
-python Run_KGE.py --model TransE --disease [disease] --dim 200 --margin 0.6 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 1000
+python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.3 --l_r 5e-4 --epoches 200
 ```
-**TransH**:  
-```
-python Run_KGE.py --model TransH --disease [disease] --dim 200 --margin 0.6 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 1000
-```
-**ConvKB**:  
-```
-python Run_KGE.py --model ConvKB --disease [disease] --dim 200 --n_filter 10 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 200
-```
-
-The above are the parameters for S.  
-For S + C, S + D, and S + C + D, (l_r = 5e-4,  epoches = 200) is recommended.  
