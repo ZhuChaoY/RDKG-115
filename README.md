@@ -35,6 +35,12 @@ Rare diseases (RDs) individually affect a small number of people but collectivel
 **vocab.txt**  
 Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert     
 
+### RDKG-115/
+**entity_name_map.xlsx** : Entity key-name mapping file
+**RDKG-115.csv** : raw RDKG-115  
+**RDKG-115 (plus inferred).csv** : RDKG-115 merge with reliable new inferred knowledges  
+
+
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
 (2) **TransH**: [Knowledge Graph Embedding by Translating on Hyperplanes](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.486.2800&rep=rep1&type=pdf)   
