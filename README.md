@@ -83,3 +83,17 @@ python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.0 --l_r 
 python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
 python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.3 --l_r 5e-4 --epoches 200
 ```
+**TransH**
+```
+python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.5 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.5 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+```
+**RotatE**
+```
+python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.0 --lanta_d 0.3 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.1 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+```
