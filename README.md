@@ -38,7 +38,7 @@ Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
 (2) **TransH**: [Knowledge Graph Embedding by Translating on Hyperplanes](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.486.2800&rep=rep1&type=pdf)   
-(3) **ConvKB**: [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](https://arxiv.org/pdf/1712.02121.pdf)   
+(3) **RotatE**: [ROTATE: KNOWLEDGE GRAPH EMBEDDING BY RELATIONAL ROTATION IN COMPLEX SPACE](https://arxiv.org/pdf/1902.10197.pdf)   
 (4) **BERT**: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf) (Code: https://github.com/google-research/bert)    
 (5) **BioBERT**: [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/pdf/1901.08746v2.pdf)
 
@@ -48,9 +48,9 @@ Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert
 (3) numpy 1.17.4  
 
 ## Operating Instructions
-(1) Run get_E_dict.py to get E_dict.json in **Annotation/**     
+(1) Run upzip_all_files.py to upzip all *.zip files
 ```
-python get_E_dict.py
+python upzip_all_files.py
 ```
 
 (2) Run get_C_dict.py to get C_dict.data and E_index.data in **Model/C&D/** (Already in the folder, you can not run)    
