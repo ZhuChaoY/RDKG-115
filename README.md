@@ -30,13 +30,11 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 **train.csv** : Train set of RDKG-115 (98%)    
 **dev.csv** : Dev set of RDKG-115 (1%)  
 **test.csv** : Test set of RDKG-115 (1%)  
-#### Pretrained BioBERT/  
-**biobert_config.json**  
-**biobert_model.ckpt.data-00000-of-00001**  
-**biobert_model.ckpt.index**  
-**biobert_model.ckpt.meta**  
-**vocab.txt**  
-Self download biobert_model.ckpt from https://github.com/dmis-lab/biobert     
+#### Pretrained BERT/ 
+##### bert/ : Self download from https://huggingface.co/bert-base-uncased/tree/main  
+##### biobert/ : Self download from https://huggingface.co/dmis-lab/biobert-base-cased-v1.2/tree/main  
+##### pubmedbert/ : Self download from https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/tree/main  
+##### scibert/ : Self download from https://huggingface.co/allenai/scibert_scivocab_uncased/tree/main  
 
 ### RDKG-115/
 **entity_name_map.xlsx** : Entity key-name mapping file  
