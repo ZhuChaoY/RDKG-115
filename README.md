@@ -14,15 +14,16 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 **Models.py** : TransE, TransH, ConvKB, RotatE structure    
 **run_kge.py** : Running and configuration file         
 **train_kge.py** : Class of processing and tool functions for Knowledge Graph Embedding   
-#### C&D/
+#### C/
 **C_dict.data** : Dict of entity category annotation  
-**D_table.data** : Table of entity description annotation  
-**E_index.json** : Entity index dict for C_dict and D_table  
-**get_C_dict.py** : Run it to get C_dict.data and E_index.data    
-**D_Table.py** : Structure for training description table        
-**Optimization.py** : Training optimization of BioBERT     
-**Tokenization.py** : Tokenization function of BioBERT     
-**Run_D_Table.py** : Run it to get D_table.data  
+**get_c_dict.py** : Run it to get C_dict.data  
+#### D/
+**BERT.py** : Structure of BERT
+**DTModel.py** : Structure for training description table    
+**optimization.py** : Training optimization of BERT    
+**run_d_Table.py** : Run it to get D_table.data
+**tokenization.py** : Tokenization function of BERT   
+**train_d_Table.py** : Class of processing and tool functions for D_table
 #### KG/
 **entity.csv** : Entities of RDKG-115  
 **relation.csv** : Relations of RDKG-115  
