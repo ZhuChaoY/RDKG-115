@@ -49,12 +49,12 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 (5) **BERT**: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf) (Code: https://github.com/google-research/bert)    
 (6) **BioBERT**: [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/pdf/1901.08746.pdf)  
 (7) **PubMedBERT**: [Domain-Specific Language Model Pretraining for Biomedical Natural Language Processing](https://arxiv.org/pdf/2007.15779.pdf)  
-(6) **SCIBERT**: [SCIBERT: A Pretrained Language Model for Scientific Text](https://arxiv.org/abs/1903.10676.pdf)  
+(8) **SCIBERT**: [SCIBERT: A Pretrained Language Model for Scientific Text](https://arxiv.org/abs/1903.10676.pdf)  
 
 ## Version
-(1) python 3.6  
-(2) tensorflow-gpu 1.12.0  
-(3) numpy 1.17.4  
+(1) python 3.6.2  
+(2) torch 1.9.1+cu111  
+(3) numpy 1.19.2
 
 ## Operating Instructions
 (1) Run upzip_all_files.py to upzip all *.zip files
