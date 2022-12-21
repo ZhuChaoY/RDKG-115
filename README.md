@@ -10,10 +10,10 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 ### Annotation/
 **E_dict.json** : json file of standard entirt set  
 
-### Model/ 
-**KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding    
-**Models.py** : TransE, TransH, RotatE structure    
-**Run_KGE.py** : Run KGE.py        
+### Model/  
+**Models.py** : TransE, TransH, ConvKB, RotatE structure    
+**run_kge.py** : Running and configuration file         
+**train_kge.py** : Class of processing and tool functions for Knowledge Graph Embedding   
 #### C&D/
 **C_dict.data** : Dict of entity category annotation  
 **D_table.data** : Table of entity description annotation  
