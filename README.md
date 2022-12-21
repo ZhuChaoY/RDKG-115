@@ -18,12 +18,12 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 **C_dict.data** : Dict of entity category annotation  
 **get_c_dict.py** : Run it to get C_dict.data  
 #### D/
-**BERT.py** : Structure of BERT
+**BERT.py** : Structure of BERT  
 **DTModel.py** : Structure for training description table    
-**optimization.py** : Training optimization of BERT    
-**run_d_Table.py** : Run it to get D_table.data
+**optimization.py** : Training optimization of BERT     
+**run_d_Table.py** : Run it to get D_table.data  
 **tokenization.py** : Tokenization function of BERT   
-**train_d_Table.py** : Class of processing and tool functions for D_table
+**train_d_Table.py** : Class of processing and tool functions for D_table   
 #### KG/
 **entity.csv** : Entities of RDKG-115  
 **relation.csv** : Relations of RDKG-115  
