@@ -67,32 +67,39 @@ python get_c_dict.py
 python run_d_table.py --model pubmedbert --len_d 150 --l_r 1e-5 --batch_size 8 --epoches 5 --earlystop 1   
 ```
 
-(3) Run Run_KGE.py to train TransE, TransH, and RotatE in **Model/**
+(3) Run run_kge.py to train TransE, TransH, ConvKB and RotatE in **Model/**
 #### 4 Configurations Interpretation   
 lanta_c == 0 and lanta_d == 0 : S  
 lanta_c != 0 and lanta_d == 0 : S + C  
 lanta_c == 0 and lanta_d != 0 : S + D  
 lanta_c != 0 and lanta_d != 0 : S + C + D  
 
-#### Recommended Parameters for 3 models and 4 Configurations (dim of 100)   
+#### Recommended Parameters for 4 models and 4 Configurations (dim of 128)   
 **TransE**
 ```
-python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
-python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model TransE --margin 0.5 --lanta_c 0.3 --lanta_d 0.3 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransE --margin 1.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model TransE --margin 1.0 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransE --margin 1.0 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransE --margin 1.0 --lanta_c 0.5 --lanta_d 0.5 --l_r 5e-4 --epoches 200
 ```
 **TransH**
 ```
-python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
-python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.5 --lanta_d 0.0 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model TransH --margin 0.5 --lanta_c 0.5 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 1.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model TransH --margin 1.0 --lanta_c 0.5 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 1.0 --lanta_c 0.0 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 1.0 --lanta_c 0.3 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+```
+**ConvKB**
+```
+python Run_KGE.py --model TransH --margin 2.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model TransH --margin 2.0 --lanta_c 0.5 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 2.0 --lanta_c 0.0 --lanta_d 0.3 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model TransH --margin 2.0 --lanta_c 0.1 --lanta_d 0.5 --l_r 5e-4 --epoches 200
 ```
 **RotatE**
 ```
-python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
-python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.0 --lanta_d 0.3 --l_r 5e-4 --epoches 200
-python Run_KGE.py --model RotatE --margin 2.5 --lanta_c 0.1 --lanta_d 0.5 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model RotatE --margin 3.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 800
+python Run_KGE.py --model RotatE --margin 3.0 --lanta_c 0.3 --lanta_d 0.0 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model RotatE --margin 3.0 --lanta_c 0.0 --lanta_d 0.3 --l_r 5e-4 --epoches 200
+python Run_KGE.py --model RotatE --margin 3.0 --lanta_c 0.1 --lanta_d 0.5 --l_r 5e-4 --epoches 200
 ```
