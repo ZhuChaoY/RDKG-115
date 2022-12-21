@@ -57,22 +57,17 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 (3) numpy 1.19.2
 
 ## Operating Instructions
-(1) Run upzip_all_files.py to upzip all *.zip files
+(1) Run get_c_dict.py to get C_dict.data in **Model/C/** (Already in the folder, you can not run)    
 ```
-python upzip_all_files.py
-```
-
-(2) Run get_C_dict.py to get C_dict.data and E_index.data in **Model/C&D/** (Already in the folder, you can not run)    
-```
-python get_C_dict.py   
+python get_c_dict.py   
 ```
 
-(3) Run Run_D_Table.py to get D_table.data in **Model/C&D/**     
+(2) Run run_d_table.py to get D_table.data in **Model/D/**     
 ```
-python Run_D_Table.py --len_d 150 --dim 100 --l_r 1e-5 --batch_size 8 --epoches 5 --earlystop 1   
+python run_d_table.py --model pubmedbert --len_d 150 --l_r 1e-5 --batch_size 8 --epoches 5 --earlystop 1   
 ```
 
-(4) Run Run_KGE.py to train TransE, TransH, and RotatE in **Model/**
+(3) Run Run_KGE.py to train TransE, TransH, and RotatE in **Model/**
 #### 4 Configurations Interpretation   
 lanta_c == 0 and lanta_d == 0 : S  
 lanta_c != 0 and lanta_d == 0 : S + C  
