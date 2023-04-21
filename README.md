@@ -8,7 +8,7 @@ RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal
 
 ## Files
 ### Annotation/
-**E_dict.json** : json file of standard entirt set  
+**E_dict.json** : json file of standard entity set  
 
 ### Model/  
 **Models.py** : TransE, TransH, ConvKB, RotatE structure    
