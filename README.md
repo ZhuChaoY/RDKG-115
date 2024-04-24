@@ -1,5 +1,5 @@
 # RDKG-115
-[RDKG-115: Assisting Drug Repurposing and Discovery for Rare Diseases by Trimodal Knowledge Graph Embedding](https://www.sciencedirect.com/science/article/pii/S0010482523007278)      
+[RDKG-115: Assisting drug repurposing and discovery for rare diseases by trimodal knowledge graph embedding](https://www.sciencedirect.com/science/article/pii/S0010482523007278)      
 
 ## Cite By
 Chaoyu Zhu, Xiaoqiong Xia, Nan Li, Fan Zhong, Zhihao Yang, Lei Liu. RDKG-115: Assisting drug repurposing and discovery for rare diseases by trimodal knowledge graph embedding. Computers in Biology and Medicine, 2023, 107262.
